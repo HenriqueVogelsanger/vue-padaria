@@ -9,4 +9,5 @@ import HeaderVue from '@/components/others/HeaderVue.vue'
 </template>
 
 <style scoped>
+
 </style>

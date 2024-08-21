@@ -3,6 +3,7 @@
 
 <template>
     <main>
+        <h1>Login Cliente</h1>
         <form @submit.prevent>
             <label for="">Nome:</label>
             <input type="text" placeholder="nome">
@@ -47,5 +48,11 @@ button {
     border: 0;
     padding: 0.5rem;
     border-radius: 5px;
+}
+h1{
+    color: rgb(83, 79, 79);
+    padding: 1rem;
+    gap: 10px;
+    text-align: center;
 }
 </style>
