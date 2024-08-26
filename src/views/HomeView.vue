@@ -9,7 +9,7 @@
     <div class="texto">
     <h1>PADARIA CELESTE</h1>
     <p>Em um cantinho acolhedor da cidade, a Padaria Celeste se destaca como um verdadeiro refúgio para os amantes de pão fresco e delícias artesanais. Ao entrar, somos recebidos pelo aroma irresistível de pães assados na hora, que se mistura com o calor convidativo do ambiente. As prateleiras são um desfile de produtos cuidadosamente preparados: 
-      pães crocantes, croissants dourados e uma variedade de bolos e tortas que parecem saídos de um sonho.</p>
+      pães crocantes, croissants dourados e uma variedade de bolos e tortas que parecem saídos de um sonho!</p>
     </div>
     
   </main>
