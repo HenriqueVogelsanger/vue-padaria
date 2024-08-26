@@ -5,15 +5,15 @@
     <header>
         <ul>
             <router-link to="/">Home
-                <img src="../../../public/casa.svg" alt="">
+                <img src="../../../public/casa.svg" alt="img-home">
             </router-link>
 
             <router-link to="/funcionarios">Funcionarios
-                <img src="../../../public/funcionario.svg" alt="">
+                <img src="../../../public/funcionario.svg" alt="img-funcionario">
             </router-link>
 
             <router-link to="/fornecedores">Fornecedores
-                <img src="../../../public/pessoa.svg" alt="">
+                <img src="../../../public/pessoa.svg" alt="img-fornecedores">
             </router-link>
 
 
@@ -47,6 +47,10 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+img {
+    width: 100px;
+    height: 80px;
 }
 
 a {
