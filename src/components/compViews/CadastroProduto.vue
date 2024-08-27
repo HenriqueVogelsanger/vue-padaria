@@ -4,16 +4,16 @@
 <template>
         <div class="background">
         <div class="modal">        
-            <h1>Cadastro Fornecedor:</h1>
+            <h1>Cadastro Produto</h1>
         <form @submit.prevent>
             <label for="">Nome:</label>
             <input type="text" placeholder="nome">
-            <label for="">Email:</label>
-            <input type="text" placeholder="email">
-            <label for="">Telefone:</label>
-            <input type="text" placeholder="telefone">
-            <label for="">CPF/CNPJ</label>
-            <input type="text" placeholder="cpf cnpj">
+            <label for="">Valor:</label>
+            <input type="text" placeholder="valor">
+            <label for="">Categoria:</label>
+            <input type="text" placeholder="categoria">
+            <label for="">Custo:</label>
+            <input type="text" placeholder="custo">
             <button @click="$emit('close')">
                 Enviar
             </button>
@@ -22,7 +22,6 @@
 </div>
 </template>
 <style scoped>
-
 .background{
     width: 100%;
     height: 100%;

@@ -1,4 +1,8 @@
 <script setup>
+import LoginFuncionario from '@/components/compViews/LoginFuncionario.vue';
+import { ref } from 'vue';
+
+const showModal = ref(false)
 </script>
 
 <template>
@@ -7,7 +11,7 @@
     <img src="../../../public/paes-padarias-copacabana-rio-de-janeiro.jpg" alt="">
   </div>
     <div class="texto">
-    <h1>PADARIA CELESTE</h1>
+    <h1>PADARIA SANTO PÂO</h1>
     <p>Em um cantinho acolhedor da cidade, a Padaria Celeste se destaca como um verdadeiro refúgio para os amantes de pão fresco e delícias artesanais. Ao entrar, somos recebidos pelo aroma irresistível de pães assados na hora, que se mistura com o calor convidativo do ambiente. As prateleiras são um desfile de produtos cuidadosamente preparados: 
       pães crocantes, croissants dourados e uma variedade de bolos e tortas que parecem saídos de um sonho!</p>
     </div>
@@ -18,6 +22,11 @@
         </a>
       </nav>
     </div>
+
+    <button @click="showModal = !showModal" class="cadastro">Entrar</button>
+    <div v-if="showModal">
+    <LoginFuncionario @close="showModal = !showModal" /></div>
+
   
   </main>
 </template>
@@ -51,6 +60,10 @@ main{
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+button{
+  height: 35px;
 }
 
 </style>

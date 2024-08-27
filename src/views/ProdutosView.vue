@@ -1,9 +1,12 @@
 <script setup>
+import CadastroProduto from '@/components/compViews/CadastroProduto.vue';
+import { ref } from 'vue';
+
+const showModal = ref(false)
 </script>
 
 <template>
     <main>
-        <div>
             <h1>Registro Produtos</h1>
             <form @submit.prevent>
 
@@ -19,15 +22,16 @@
                 <li>Quantidade em estoque:</li>
                 <li>Quanidade vendida:</li>
             </ul>
-        </div>
-
+        <button @click="showModal = !showModal" class="cadastro">Cadastrar Produto</button>
+    <div v-if="showModal">
+    <CadastroProduto @close="showModal = !showModal" /></div>
     </main>
 </template>
 
 <style scoped>
 main {
     margin: auto;
-    width: 85%;
+    width: 40%;
     background-color: #DCD2D2;
     padding: 1rem;
     height: 50vh;
@@ -70,4 +74,5 @@ ul{
     text-align: center;
     margin-top: 20px;
 }
+
 </style>

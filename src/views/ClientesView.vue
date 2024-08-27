@@ -7,39 +7,34 @@ const showModal = ref(false)
 
 <template>
     <main>
-        <div>
-            <h1>Registro Produtos</h1>
+            <h1>Registro Clientes</h1>
             <form @submit.prevent>
 
-                <label for="">Nomes dos produtos:</label>
-                <input type="text" placeholder="Nome produto">
+                <label for="">Nomes dos Cliente:</label>
+                <input type="text" placeholder="Nome Cliente">
                 <button>
                     Enviar
                 </button>
             </form>
             <ul>
-                <li>Valor produto:</li>
-                <li>Valor Vendido:</li>
-                <li>Quantidade em estoque:</li>
-                <li>Quanidade vendida:</li>
+                <li>CPF:</li>
+                <li>Gasto Total:</li>
+                <li>Frequência:</li>
+                <li>Itens Adquiridos:</li>
+                <li>Valor da Últma Compra:</li>
             </ul>
-        </div>
         <button @click="showModal = !showModal" class="cadastro">Cadastrar Cliente</button>
         <div v-if="showModal">
-            <ClientesComp />
+            <ClientesComp @close="showModal = !showModal"/>
         </div>
     </main>
 </template>
     
 <style scoped>
-.cadastro {
-    margin-top: 120px;
-    width: 100px;
-}
 
 main {
     margin: auto;
-    width: 85%;
+    width: 40%;
     background-color: #DCD2D2;
     padding: 1rem;
     height: 50vh;

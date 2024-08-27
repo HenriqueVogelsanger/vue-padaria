@@ -2,7 +2,6 @@
 </script>
 
 <template>
-    <main>
         <div class="background">
         <div class="modal">        
             <h1>Cadastro Cliente</h1>
@@ -15,22 +14,16 @@
             <input type="text" placeholder="cpf">
             <label for="">Telefone</label>
             <input type="text" placeholder="telefone">
-            <button>
+            <button @click="$emit('close')">
                 Enviar
             </button>
         </form>
 </div>
 </div>
-    </main>
 </template>
 
 <style scoped>
-main {
-    margin: auto;
-    width: 40%;
-    background-color: #DCD2D2;
-    padding: 1rem;
-}
+
 .background{
     width: 100%;
     height: 100%;
@@ -48,6 +41,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #DCD2D2;
 }
 
 form {
