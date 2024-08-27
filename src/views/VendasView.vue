@@ -2,20 +2,22 @@
 </script>
 
 <template>
-<main>
-<h1>Registro Vendas</h1>
-<form @submit.prevent>
-    <input type="text" placeholder="cliente"><img src="../../../public/seta.svg" alt=""> 
-<label for="">Nomes de Funcionarios:</label>
-<input type="text" placeholder="produto1">
-<input type="text" placeholder="produto2">
-<input type="text" placeholder="produto3">
-<input type="text" placeholder="produto4">
-<button>
-                Enviar
-            </button>
-</form>
-</main>
+    <main>
+        <div>
+            <h1>Registro Vendas</h1>
+            <form @submit.prevent>
+                <input type="text" placeholder="cliente"><img src="../../../public/seta.svg" alt="">
+                <label for="">Nomes de Funcionarios:</label>
+                <input type="text" placeholder="produto1">
+                <input type="text" placeholder="produto2">
+                <input type="text" placeholder="produto3">
+                <input type="text" placeholder="produto4">
+                <button>
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </main>
 </template>
 
 <style scoped>
@@ -47,13 +49,15 @@ button {
     padding: 0.5rem;
     border-radius: 5px;
 }
-h1{
+
+h1 {
     color: rgb(126, 122, 122);
     padding: 1rem;
     gap: 10px;
     text-align: center;
 }
-img{
+
+img {
     height: 20px;
     margin: center;
 }
