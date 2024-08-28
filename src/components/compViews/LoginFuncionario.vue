@@ -4,16 +4,14 @@
 <template>
         <div class="background">
         <div class="modal">        
-            <h1>Cadastro Cliente</h1>
+            <h1>Login</h1>
         <form @submit.prevent>
             <label for="">Nome:</label>
             <input type="text" placeholder="nome">
             <label for="">Email:</label>
             <input type="text" placeholder="email">
-            <label for="">CPF:</label>
-            <input type="text" placeholder="cpf">
-            <label for="">Telefone</label>
-            <input type="text" placeholder="telefone">
+            <label for="">Senha:</label>
+            <input type="text" placeholder="Senha">
             <button @click="$emit('close')">
                 Enviar
             </button>

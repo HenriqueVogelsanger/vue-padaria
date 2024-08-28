@@ -4,16 +4,16 @@
 <template>
         <div class="background">
         <div class="modal">        
-            <h1>Cadastro Cliente</h1>
+            <h1>Cadastro Funcionário</h1>
         <form @submit.prevent>
             <label for="">Nome:</label>
             <input type="text" placeholder="nome">
             <label for="">Email:</label>
             <input type="text" placeholder="email">
-            <label for="">CPF:</label>
-            <input type="text" placeholder="cpf">
-            <label for="">Telefone</label>
-            <input type="text" placeholder="telefone">
+            <label for="">Senha:</label>
+            <input type="text" placeholder="senha">
+            <label for="">Confirmar Senha:</label>
+            <input type="text" placeholder="confirmar senha">
             <button @click="$emit('close')">
                 Enviar
             </button>
@@ -21,7 +21,6 @@
 </div>
 </div>
 </template>
-
 <style scoped>
 
 .background{
@@ -41,7 +40,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #DCD2D2;
 }
 
 form {

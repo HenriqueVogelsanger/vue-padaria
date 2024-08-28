@@ -1,33 +1,43 @@
 <script setup>
+import CadastroFuncionario from '@/components/compViews/CadastroFuncionario.vue';
+import { ref } from 'vue';
+
+const showModal = ref(false)
 </script>
 
 <template>
-<main>
-<h1>Registro Funcionarios</h1>
-<form @submit.prevent>
-<label for="">Nomes de Funcionarios:</label>
-<input type="text" placeholder="funcionario1">
-<input type="text" placeholder="funcionario2">
-<input type="text" placeholder="funcionario3">
-<input type="text" placeholder="funcionario4">
-<button>
-                Enviar
-            </button>
-</form>
-</main>
+    <main>
+            <h1>Registro Funcionario</h1>
+            <form @submit.prevent>
+
+                <label for="">Nome Funcionario:</label>
+                <input type="text" placeholder="nome Funcionario">
+                <button>
+                    Enviar
+                </button>
+            </form>
+            <ul>
+                <li>Valor vendido:</li>
+                <li>Quantidade de Vendas:</li>
+            </ul>
+    <button @click="showModal = !showModal" class="cadastro">Cadastrar Funcionário</button>
+    <div v-if="showModal">
+    <CadastroFuncionario  @close="showModal = !showModal"/></div>
+    </main>
 </template>
 
 <style scoped>
+
 main {
     margin: auto;
-    width: 85%;
+    width: 40%;
     background-color: #DCD2D2;
     padding: 1rem;
     height: 50vh;
 }
 
 form {
-    width: 50%;
+    width: 40%;
     margin: auto;
     display: flex;
     text-align: center;
@@ -46,11 +56,21 @@ button {
     padding: 0.5rem;
     border-radius: 5px;
 }
-h1{
+
+h1 {
     color: rgb(126, 122, 122);
     padding: 1rem;
     gap: 10px;
     text-align: center;
 }
 
-</style>
+img {
+    height: 20px;
+    margin: center;
+}
+ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+</style>   
