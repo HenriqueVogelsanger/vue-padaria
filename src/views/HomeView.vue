@@ -11,7 +11,7 @@ const showModal1 = ref(false)
 <template>
   <main>
     <div class="img">
-    <img src="../../../public/paes.jpg" alt="">
+    <img src="./public/paes.jpg" alt="">
   </div>
     <div class="texto">
     <h1>PADARIA SANTO PÂO</h1>
