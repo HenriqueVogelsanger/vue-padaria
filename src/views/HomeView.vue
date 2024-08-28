@@ -1,8 +1,11 @@
 <script setup>
-import LoginFuncionario from '@/components/compViews/LoginFuncionario.vue';
+import CadastrarVenda from '@/components/compViews/CadastrarVenda.vue';
 import { ref } from 'vue';
+import LoginFuncionario from '@/components/compViews/LoginFuncionario.vue';
 
-const showModal = ref(false)
+
+const showModal = ref(false);
+const showModal1 = ref(false)
 </script>
 
 <template>
@@ -23,9 +26,14 @@ const showModal = ref(false)
       </nav>
     </div>
 
-    <button @click="showModal = !showModal" class="cadastro">Entrar</button>
+    <button @click="showModal1 = !showModal1" class="cadastro">Entrar</button>
+    <div v-if="showModal1">
+    <LoginFuncionario @close="showModal1 = !showModal1" /></div>
+
+    <button @click="showModal = !showModal" class="cadastro">Cadastrar Venda</button>
     <div v-if="showModal">
-    <LoginFuncionario @close="showModal = !showModal" /></div>
+    <CadastrarVenda @close="showModal = !showModal" /></div>
+
 
   
   </main>
@@ -64,6 +72,7 @@ main{
 
 button{
   height: 35px;
+  margin-left: 10px;
 }
 
 </style>

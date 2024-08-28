@@ -10,27 +10,28 @@ const showModal = ref(false)
     <main>
         <div>
             <h1>Registro Fornecedor:</h1>
-        <form @submit.prevent>
-            <button>
-                Enviar
-            </button>
-        </form>
-        <ul>
-            <li>Nome empresa:</li>
-            <li>Produto Vendido:</li>
-            <li>Valor Total Pago:</li>
-            <li>Itens Fornecidos:</li>
-        </ul>
+            <form @submit.prevent>
+                <input type="text" placeholder="nome fornecedor">
+                <button>
+                    Enviar
+                </button>
+            </form>
+            <ul>
+                <li>Nome empresa:</li>
+                <li>Produto Vendido:</li>
+                <li>Valor Total Pago:</li>
+                <li>Itens Fornecidos:</li>
+            </ul>
         </div>
         <button @click="showModal = !showModal" class="cadastro">Cadastrar Fornecedor</button>
-    <div v-if="showModal">
-    <CadastroFornecedor @close="showModal = !showModal" /></div>
+        <div v-if="showModal">
+            <CadastroFornecedor @close="showModal = !showModal" />
+        </div>
 
     </main>
 </template>
 
 <style scoped>
-
 main {
     margin: auto;
     width: 40%;
@@ -71,7 +72,8 @@ img {
     height: 20px;
     margin: center;
 }
-ul{
+
+ul {
     list-style: none;
     text-align: center;
     margin-top: 20px;

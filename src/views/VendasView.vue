@@ -6,19 +6,17 @@
         <div>
             <h1>Registro Vendas</h1>
             <form @submit.prevent>
-                <input type="text" placeholder="cliente"><img src="../../../public/seta.svg" alt="">
-                <label for="">Nomes de Funcionarios:</label>
-                <input type="text" placeholder="produto1">
-                <input type="text" placeholder="produto2">
-                <input type="text" placeholder="produto3">
-                <input type="text" placeholder="produto4">
-                <button>
-                    Enviar
-                </button>
+                <input type="date" placeholder="data"><img src="../../../public/seta.svg" alt="">
+                <label for="">Balanço</label>
             </form>
+            <ul>
+                <li><b>Lucro:</b></li>
+                <li><b>Número de Vendas:</b></li>
+                <li><b>Gastos:</b></li>
+            </ul>
         </div>
     </main>
-</template>
+</template> 
 
 <style scoped>
 main {
@@ -27,6 +25,8 @@ main {
     background-color: #DCD2D2;
     padding: 1rem;
     height: 50vh;
+    align-items: center;
+
 }
 
 form {
@@ -61,4 +61,19 @@ img {
     height: 20px;
     margin: center;
 }
+ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+    align-items: left;
+    background-color: white;
+    width: 30%;
+    margin-left: 35%;
+
+}
+li{
+    text-align: left;
+    margin-left: 3%;
+}
+
 </style>
