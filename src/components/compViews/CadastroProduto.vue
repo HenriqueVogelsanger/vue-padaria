@@ -39,6 +39,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #DCD2D2;
+
 }
 
 form {

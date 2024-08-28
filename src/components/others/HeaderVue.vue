@@ -38,8 +38,8 @@
 <style scoped>
 header {
     width: 100%;
-    padding: 1rem;
-    margin: 30px auto;
+    padding: 2rem;
+    margin: 20px auto;
     background-color: #A37953;
 }
 
@@ -51,6 +51,7 @@ ul {
 img {
     width: 100px;
     height: 80px;
+    margin: auto;
 }
 
 a {

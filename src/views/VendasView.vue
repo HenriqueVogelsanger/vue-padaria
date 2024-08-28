@@ -1,4 +1,8 @@
 <script setup>
+import EmitirNota from '@/components/compViews/EmitirNota.vue';
+import { ref } from 'vue';
+
+const showModal = ref(false)
 </script>
 
 <template>
@@ -15,6 +19,9 @@
                 <li><b>Gastos:</b></li>
             </ul>
         </div>
+        <button @click="showModal = !showModal" class="cadastro">Emitir Nota Fiscal</button>
+    <div v-if="showModal">
+    <EmitirNota @close="showModal = !showModal" /></div>
     </main>
 </template> 
 
