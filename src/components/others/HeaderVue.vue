@@ -5,30 +5,30 @@
     <header>
         <ul>
             <router-link to="/">Home
-                <img src="./public/casa.svg" alt="img-home">
+                <img src="../../../casa.svg" alt="img-home">
             </router-link>
 
             <router-link to="/clientes">Clientes
-                <img src="./public/funcionario.svg" alt="img-funcionario">
+                <img src="../../../funcionario.svg" alt="img-funcionario">
             </router-link>
 
             <router-link to="/funcionarios">Funcionários
-                <img src="./public/pessoa.svg" alt="img-fornecedores">
+                <img src="../../../pessoa.svg" alt="img-fornecedores">
             </router-link>
 
 
             <router-link to="/vendas">Venda
-                <img src="./public/graphic.svg" alt="">
+                <img src="../../../graphic.svg" alt="">
             </router-link>
 
 
             <router-link to="/fornecedores">Fornecedores
-                <img src="./public/Ver.svg" alt="">
+                <img src="../../../Ver.svg" alt="">
             </router-link>
 
 
             <router-link to="/produtos">Produtos
-                <img src="./public/xicara.svg" alt="">
+                <img src="../../../xicara.svg" alt="">
             </router-link>
 
         </ul>
