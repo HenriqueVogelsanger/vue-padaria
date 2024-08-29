@@ -4,7 +4,7 @@
 <template>
     <header>
         <ul>
-            <router-link to="/">Home
+            <router-link to="home">Home
                 <img src="../../../casa.svg" alt="img-home">
             </router-link>
 
