@@ -10,7 +10,7 @@ const showModal = ref(false)
         <div>
             <h1>Registro Vendas</h1>
             <form @submit.prevent>
-                <input type="date" placeholder="data"><img src="../../../public/seta.svg" alt="">
+                <input type="date" placeholder="data"><img src="/public/seta.svg" alt="">
                 <label for="">Balanço</label>
             </form>
             <ul>
